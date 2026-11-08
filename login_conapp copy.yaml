@@ -1,0 +1,16 @@
+appId: com.conauto.conappv4
+
+---
+- launchApp
+#- tapOn: "Iniciar sesión con Microsoft"
+
+
+- assertVisible:
+    text: "Iniciar sesión con cuenta local"
+
+- tapOn:
+    text: "Iniciar sesión con cuenta local"
+    retryTapIfNoChange: true
+
+- assertVisible:
+    text: "Contraseña"
